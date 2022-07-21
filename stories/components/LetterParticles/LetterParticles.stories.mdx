@@ -1,0 +1,34 @@
+import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
+import LetterParticlesWrapper, {
+  LETTER_PARTICLES_ARGS_DEFAULT,
+  LETTER_PARTICLES_TITLE,
+} from "./LetterParticles.wrapper";
+import LetterParticles from "../../../src/components/LetterParticles/LetterParticles";
+
+<Meta component={LetterParticles} title={LETTER_PARTICLES_TITLE} />
+
+# LetterParticles
+
+El componente `LetterParticles` XXXX.
+
+## Imports
+
+```js
+import { LetterParticles } from "react-particles";
+```
+
+## Props
+
+<ArgsTable of={LetterParticles} />
+
+## Default
+
+<Canvas>
+  <Story
+    name="default"
+    args={LETTER_PARTICLES_ARGS_DEFAULT}
+    parameters={{ layout: "centered" }}
+  >
+    {LetterParticlesWrapper.bind({})}
+  </Story>
+</Canvas>
